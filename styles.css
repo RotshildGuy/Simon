@@ -3,12 +3,6 @@ body {
   background-color: #FFEDFA;
 }
 
-html {
-  zoom: 1;
-  -webkit-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%; 
-}
-
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -31,7 +25,6 @@ html {
   border-radius: 20%;
 }
 
-/* התאמה למסכים קטנים */
 @media (max-width: 600px) {
   .btn {
     height: 120px;
