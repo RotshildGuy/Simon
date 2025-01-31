@@ -10,6 +10,15 @@ body {
   color: #DE3163;
 }
 
+.btn_letter{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  color: #FFEDFA;
+  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+}
+
 .container {
   display: block;
   width: 90%;
@@ -36,6 +45,10 @@ body {
     font-size: 2rem;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+
+  .btn_letter{
+    visibility: hidden;
   }
 }
 
