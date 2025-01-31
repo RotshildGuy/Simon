@@ -1,28 +1,49 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #FFEDFA;
+}
+
+html {
+  zoom: 1;
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  50px;
-  color: #FEF2BF;
+  margin: 35px;
+  color: #DE3163;
 }
 
 .container {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .btn {
-  margin: 25px;
+  margin: 15px;
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 5px solid black;
   border-radius: 20%;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 600px) {
+  .btn {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+  }
+
+  #level-title {
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 .game-over {
