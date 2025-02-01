@@ -1,5 +1,14 @@
 $(document).keypress(function(event) {
-    start();
+    if(event.key == " ")
+        start();
+    if(event.key == 'w' || event.key == 'W' || event.key == '\'')
+        game("green");
+    if(event.key == 'e' || event.key == 'E' || event.key == 'ק')
+        game("red");
+    if(event.key == 's' || event.key == 'S' || event.key == 'ד')
+        game("yellow");
+    if(event.key == 'd' || event.key == 'D' || event.key == 'ג')
+        game("blue");
 });
 
 $('#level-title').click(function() {
@@ -56,12 +65,11 @@ function playSequence(j) {
       setTimeout(() => {
         botPress(j);
         playSequence(j + 1); 
-      }, 500); 
+      }, 750); 
     }
   }
 
 function game(color){
-    console.log("you pressed: " + color + ", " + colorMap[color] + "\n the right ans is: " + valueMap[ans[i]] + ", " + ans[i]);
     if(colorMap[color] == ans[i]){
         humanPress(i);
         if(++i == ans.length){
